@@ -1,0 +1,9 @@
+I analyzed the text The Iliad using NLTK. During this process I used the need to normalize to get ride of fluff words.
+>>> tokens[:15]
+['provided', 'by', 'The', 'Internet', 'Classics', 'Archive', '.', 'See', 'bottom', 'for', 'copyright', '.', 'Availible', 'online', 'at']
+>>> tokens = nltk.word_tokenize(raw)
+>>> tokens = [w.lower() for w in tokens if w.isalpha()]
+>>> tokens[:15]
+['provided', 'by', 'the', 'internet', 'classics', 'archive', 'see', 'bottom', 'for', 'copright', 'avaliable', 'online', 'at', 'http', 'the']
+>>> len(tokens)
+151324
