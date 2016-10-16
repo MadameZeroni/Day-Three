@@ -1,0 +1,5 @@
+>>> fdist1 = nltk.Freqist (tokens)
+>>> print(fdist1)
+<FreqDist with 7321 samples and 151324 outcomes>
+>>> fdist1.N()
+151324
