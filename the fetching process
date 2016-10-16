@@ -1,3 +1,4 @@
+###Here you identified a story text you'd like to analyze. You will use the nltk library and use urllib to "fetch" the text. 
 >>> import nltk
 >>> from urllib import request
 >>> url = "http://classics.mit.edu/homer/iliad.mb.txt"
@@ -5,7 +6,9 @@
 >>> raw= response.read().decode('utf8')
 >>> type(raw)
 <class 'str'>
+###What are tokens? 
 >>> tokens = nltk.word_tokenize(raw)
+####What does it mean to tokenize?
 >>> type(tokens)
 <class 'list'>
 >>> len(tokens)
