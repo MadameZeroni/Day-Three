@@ -1,0 +1,12 @@
+>>> import nltk
+>>> from urllib import request
+>>> url = "http://classics.mit.edu/homer/iliad.mb.txt"
+>>> response = request.urlopen(url)
+>>> raw= response.read().decode('utf8')
+>>> type(raw)
+<class 'str'>
+>>> tokens = nltk.word_tokenize(raw)
+>>> type(tokens)
+<class 'list'>
+>>> len(tokens)
+173544
